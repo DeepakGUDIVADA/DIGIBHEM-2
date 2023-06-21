@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <title>Doctor Appointment Booking System</title>
+  <style>
+  body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  header h1 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  form {
+    display: grid;
+    gap: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th, table td {
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+
+</style>
+  
+</head>
+  
+<body>
+  <header>
+    <h1>Doctor Appointment Booking System</h1>
+  </header>
+  <main>
+    <section id="registration">
+      <h2>User Registration</h2>
+      <form>
+        <!-- Registration form fields -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <!-- Other fields -->
+        <button type="submit">Register</button>
+      </form>
+    </section>
+    
+    <section id="login">
+      <h2>User Login</h2>
+      <form>
+        <!-- Login form fields -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <!-- Other fields -->
+        <button type="submit">Login</button>
+      </form>
+    </section>
+    
+    <section id="doctor-availability">
+      <h2>Doctor Availability</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Doctor Name</th>
+            <th>Available Time Slots</th>
+            <!-- Additional columns if needed -->
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Doctor availability data -->
+          <tr>
+            <td>G V S S DEEPAK</td>
+            <td>9:00 AM - 11:00 AM</td>
+          </tr>
+          <!-- Additional rows if needed -->
+        </tbody>
+      </table>
+    </section>
+    
+    <section id="appointment-booking">
+      <h2>Appointment Booking</h2>
+      <form>
+        <!-- Appointment booking form fields -->
+        <label for="doctor">Doctor:</label>
+        <select id="doctor" name="doctor" required>
+          <option value="">Select a doctor</option>
+          <!-- Doctor options dynamically populated -->
+          <option value="1">G V S S DEEPAK</option>
+          <option value="2">K P N V SUBBA REDDY</option>
+          <!-- Additional options if needed -->
+        </select>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+        <!-- Additional fields if needed -->
+        <button type="submit">Book Appointment</button>
+      </form>
+    </section>
+    
+    <section id="appointment-management">
+      <h2>Appointment Management</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Doctor Name</th>
+            <!-- Additional columns if needed -->
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Appointment data for the logged-in user -->
+          <tr>
+            <td>June 20, 2023</td>
+            <td>G V S S DEEPAK</td>
+          </tr>
+          <!-- Additional rows if needed -->
+        </tbody>
+      </table>
+    </section>
+    
+    <section id="profile-management">
+      <h2>Profile Management</h2>
+      <form>
+        <!-- Profile management form fields -->
+        <label for="contact">Contact Details:</label>
+        <input type="text" id="contact" name="contact" required>
+        <!-- Other fields -->
+        <button type="submit">Update Profile</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; GUDIVADA VENKATA SESHA SAI DEEPAK</p>
+  </footer>
+</body>
+</html>
